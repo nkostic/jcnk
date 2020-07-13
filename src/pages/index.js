@@ -4,11 +4,11 @@ import logo from '../../content/assets/profile-pic.png'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
-// import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "Space"
+    const siteTitle = "jcnk dot space"
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -16,7 +16,7 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        {/* <ThemeToggler>
+        <ThemeToggler>
           {({ theme, toggleTheme }) => (
             <label>
               <input
@@ -27,7 +27,7 @@ class IndexPage extends React.Component {
               Dark mode
             </label>
           )}
-        </ThemeToggler>         */}
+        </ThemeToggler><br/>
         <img style={{ margin: 0 }} src={logo} alt="JCNK" />
         <h1>
           Hey there{" "}

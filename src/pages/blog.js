@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import Button from "../components/button"
-// import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 class Blog extends React.Component {
   render() {
@@ -18,7 +18,7 @@ class Blog extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        {/* <ThemeToggler>
+        <ThemeToggler>
           {({ theme, toggleTheme }) => (
             <label>
               <input
@@ -29,7 +29,7 @@ class Blog extends React.Component {
               Dark mode
             </label>
           )}
-        </ThemeToggler> */}
+        </ThemeToggler><br/>
         <Bio />
         <div style={{ margin: "20px 0 40px" }}>
           {posts.map(({ node }) => {
