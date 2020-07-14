@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `JCNK Blog`,
+    title: `jcnk space`,
     author: `Nenad Kostic`,
     description: `Audio enthusiasts discuss interesting topics.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
